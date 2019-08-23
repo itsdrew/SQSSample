@@ -1,5 +1,5 @@
-#SQS Sample
-#### Uses the AWS SDK for .Net
+# SQS Sample
+#### Uses the AWS SDK for .NET
 
 
 Instructions  
