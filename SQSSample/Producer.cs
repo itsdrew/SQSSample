@@ -20,6 +20,31 @@ namespace SQSSample {
 			}
 		}
 
+		static string payload = "{\"Last_Modified\":null," +
+			"\"Client_Number\":\"2-3-30132\"," +
+			"\"Account_ID\":\"99999\"" +
+			"\"Item_Number\":\"2017-277\"," +
+			"\"Client_Entity\":\"Sodexo, Inc.\"," +
+			"\"Entity_ID\":\"77777\"," +
+			"\"Title_of_Action\":\"Midland Funding LLC vs. Williams, Robin\"," +
+			"\"Document_Served1\":\"Doc Title 1\\r\\nDoc Title 2\"," +
+			"\"Document_Served2\":null," +
+			"\"Court_Agency\":\"Cobb County State Court\"," +
+			"\"State_Served\":null," +
+			"\"Case_Num\":\"CN: 17-G-654\"," +
+			"\"Case_Type\":\"CaseType: Garnishment\"," +
+			"\"Method_of_Service\":\"USPS\"," +
+			"\"Date_Received\":\"12/20/2018\"," +
+			"\"Date_to_Client\":\"12/20/2018\"," +
+			"\"Num_Answer_Due\":\"5\"," +
+			"\"Answer_Due_Date\":\"12/25/2018\"," +
+			"\"SOP_Sender\":\"SOPSender: Requester name\"," +
+			"\"Tracking_Num\":\"T:39248\"," +
+			"\"Handled_By\":\"HandledBy: 111\"," +
+			"\"Notes\":\"My Notes\"," +
+			"\"Image_Link\":\"http://africau.edu/images/default/sample.pdf\"," +
+			"\"Image_MD5\":null}";
+
 
 
 
@@ -27,7 +52,7 @@ namespace SQSSample {
 
 			// Put 50 messages in the queue
 			int messageCount = 50;
-			PushMessagesToQueue(" -- This is a message at " + DateTime.Now.ToShortTimeString() + " -- ", messageCount);
+			PushMessagesToQueue(payload, messageCount);
 
 		}
 
@@ -41,7 +66,7 @@ namespace SQSSample {
 
 				SendMessageRequest sendMessageRequest = new SendMessageRequest {
 					QueueUrl = Config.queueUrl,
-					MessageBody = messageBody + " | " + i
+					MessageBody = messageBody
 				};
 
 
