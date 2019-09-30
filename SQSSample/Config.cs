@@ -14,5 +14,6 @@ namespace SQSSample {
 		public static string accessKeyId = "";
 		public static string secretAccessKey = "";
 
+		public static string s3BucketName = "develop-computershare-s3-bucket";
 	}
 }
