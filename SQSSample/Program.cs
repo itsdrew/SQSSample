@@ -4,9 +4,11 @@ namespace SQSSample {
 
 		public static void Main(String[] args) {
 
-			Producer.execute();
-
+			//Producer.execute();
 			//Consumer.execute();
+
+			S3Sample.UploadObject();
+			//S3Sample.DownloadObject();
 		
 		}
 	}
