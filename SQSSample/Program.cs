@@ -7,8 +7,10 @@ namespace SQSSample {
 			//Producer.execute();
 			//Consumer.execute();
 
-			S3Sample.UploadObject();
+			//S3Sample.UploadObject();
 			//S3Sample.DownloadObject();
+
+			SNSSample.SendMessage("Hello this is a message");
 		
 		}
 	}

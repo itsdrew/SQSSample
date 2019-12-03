@@ -31,13 +31,16 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="AWSSDK.Core">
-      <HintPath>..\packages\AWSSDK.Core.3.3.103.44\lib\net45\AWSSDK.Core.dll</HintPath>
+      <HintPath>..\packages\AWSSDK.Core.3.3.103.71\lib\net45\AWSSDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="AWSSDK.SQS">
       <HintPath>..\packages\AWSSDK.SQS.3.3.101.1\lib\net45\AWSSDK.SQS.dll</HintPath>
     </Reference>
     <Reference Include="AWSSDK.S3">
       <HintPath>..\packages\AWSSDK.S3.3.3.104.32\lib\net45\AWSSDK.S3.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleNotificationService">
+      <HintPath>..\packages\AWSSDK.SimpleNotificationService.3.3.101.95\lib\net45\AWSSDK.SimpleNotificationService.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +50,7 @@
     <Compile Include="Producer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="S3Sample.cs" />
+    <Compile Include="SNSSample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
